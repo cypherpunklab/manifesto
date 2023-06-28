@@ -22,4 +22,4 @@ jobs:
         run: npm install
 
       - name: Run validation script
-        run: node validate_manifesto.js $(jq '.[-1]' collection.json)
+        run: node .github/workflows/validate_manifesto.js $(jq '.[-1]' manifestos.json)

@@ -1,0 +1,25 @@
+name: Validate Inscription ID
+
+on:
+  pull_request:
+    paths:
+      - 'collection.json'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run validation script
+        run: node validate_manifesto.js $(jq '.[-1]' collection.json)

@@ -1,0 +1,2 @@
+# manifesto
+Recursive Manifesto

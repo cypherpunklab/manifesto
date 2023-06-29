@@ -15,8 +15,8 @@ You can run this in a codespace
 
 Once you verify your inscription make a PR with your inscription Id by adding it to the collection.json
 
-1) Make a new uniuqe branch-name with your github user name
-> git checkout -b add-new-inscription-elocremarc
+1) Make a new unique branch-name 
+> git checkout -b add-new-inscription
 
 2) add your `inscriptionId` to the `collection.json` file
 ```json
@@ -41,9 +41,10 @@ git commit -m "Add new inscription ID"
 5) Push your changes:
 
 Next, push your changes to GitHub using the `git push` command:
+use the branch-name you used in step 1
 
 ```bash
-git push origin add-new-inscription
+git push origin branch-name
 ```
 
 6) Create a pull request:

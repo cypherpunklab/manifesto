@@ -20,7 +20,7 @@ Once you verify your inscription make a PR with your inscription Id by adding it
 
 2) add your `inscriptionId` to the `collection.json` file
 ```json
-{"inscriptionID": "8cb9a7f93677cc17a9f15acdd36ff368bf4efbf9cba6b77922c401f137e38025i0"},
+{"inscriptionId": "8cb9a7f93677cc17a9f15acdd36ff368bf4efbf9cba6b77922c401f137e38025i0"},
 ```
 Save and close the file when you're done.
 

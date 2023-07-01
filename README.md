@@ -3,7 +3,7 @@
 ## Inscribe
 **Inscirbe your manifesto by downloading the `manifesto.html` file [HERE](https://github.com/cypherpunklab/manifesto/blob/main/manifesto.html) and inscribing it.** 
 
-We recommend running your own node, using the ord client to inscribe and running your own ordinals explorer to view your inscription.  
+We recommend running your own bitcoin node, using the ord client to inscribe ordinals, and running your own ordinals explorer to view your inscriptions.  
 However, if you are not using the ord client, ensure 'optimize image' is NOT checked on services such as ordinalsbot.com, satscribe.xyz and others.
 
 ## About

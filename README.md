@@ -1,8 +1,10 @@
 # Manifesto
 Cypherpunk Manifesto
 
-Inscirbe your manifesto by downloading the `manifesto.html` file [here](https://github.com/cypherpunklab/manifesto/blob/main/manifesto.html) and inscribing it.
+## Inscribe
+**Inscirbe your manifesto by downloading the `manifesto.html` file [here](https://github.com/cypherpunklab/manifesto/blob/main/manifesto.html) and inscribing it.**
 
+## About
 This html file uses recursion to bring in the styles and the javascript. This makes the file very small to inscribe. The script also uses recursion to load the text of the manifesto and renders it in javascript. The text uses the recursive blockheight endpoint to change the color of the text each block.
 
 # Add your Inscription with a Pull request

@@ -1,9 +1,10 @@
-# Manifesto
-A Cypherpunk's Manifesto
+# A Cypherpunk's Manifesto
 
 ## Inscribe
 **Inscirbe your manifesto by downloading the `manifesto.html` file [HERE](https://github.com/cypherpunklab/manifesto/blob/main/manifesto.html) and inscribing it.** 
-*If not using ord client, ensure 'optimized' is NOT checked on services such as ordinalsbot.com, satscribe.xyz and others.
+
+We recommend running your own node, using the ord client to inscribe and running your own ordinals explorer to view your inscription.  
+However, if you are not using the ord client, ensure 'optimize image' is NOT checked on services such as ordinalsbot.com, satscribe.xyz and others.
 
 ## About
 This html file uses recursion to bring in the styles and the javascript. This makes the file very small to inscribe. The script also uses recursion to load the text of the manifesto and renders it in javascript. The text uses the recursive blockheight endpoint to change the color of the text each time a block is mined.

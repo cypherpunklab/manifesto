@@ -1,5 +1,5 @@
 # Manifesto
-Cypherpunk Manifesto
+A Cypherpunk's Manifesto
 
 ## Inscribe
 **Inscirbe your manifesto by downloading the `manifesto.html` file [here](https://github.com/cypherpunklab/manifesto/blob/main/manifesto.html) and inscribing it.**

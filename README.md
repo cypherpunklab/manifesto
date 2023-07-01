@@ -29,7 +29,7 @@ Make a new unique branch-name for example `add-new-inscription`:
 ```
 ## Add your inscription ID:
 
-add your `inscriptionId` to the `collection.json` file
+add your `inscriptionId` to the `collection.json` file. Put it at the top.
 ```json
 {"inscriptionId": "8cb9a7f93677cc17a9f15acdd36ff368bf4efbf9cba6b77922c401f137e38025i0"},
 ```

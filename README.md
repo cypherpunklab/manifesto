@@ -96,7 +96,7 @@ The last entry should not have a comma at the end. You also need to make sure th
 ```diff
 [
  {"inscriptionId": "<Other InscriptionId>"},
- +{"inscriptionId": "<Your InscriptionId>"},
++{"inscriptionId": "<Your InscriptionId>"},
  {"inscriptionId": "<Other InscriptionId>"}
 ]
 ```

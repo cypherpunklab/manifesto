@@ -4,13 +4,13 @@
 **Inscribe your manifesto by downloading the `manifesto.html` file [HERE](https://github.com/cypherpunklab/manifesto/blob/main/manifesto.html) and inscribing it.** 
 
 ## Run your own Bitcoin and Ord node
-We recommend running your own [bitcoin node](https://bitcoincore.org/en/download/), Along with running [ord](https://github.com/ordinals/ord#installation) to inscribe from your own node.
-If you need help setting up your node don't hesitate to reach out on our discord as well as getting help from the official ordianals [discord](https://discord.com/invite/ordinals).
+We recommend running your own [bitcoin node](https://bitcoincore.org/en/download/), along with running [ord](https://github.com/ordinals/ord#installation) to inscribe from your own node.
+If you need help setting up your node don't hesitate to reach out on the Cypherpunks Ghost [discord](https://discord.gg/MEz8yphw) and also the official ordianals [discord](https://discord.com/invite/ordinals).
 You should get at least a `1tb ssd` to run your Bitcoin node because the blockchain with the ord index is about 600gb.
 
 *<ins>Again you should run your own node</ins>*
 
-However if you want to inscribe while you are getting your node setup or the hardware is too expensive you can use a inscribing service like
+However if you want to inscribe while you are getting your node setup or the hardware is too expensive you can use an inscribing service like
 https://looksordinal.com/ to inscribe your manifesto `html` file.
 
 *Your goal should be inscribing from your own node.*

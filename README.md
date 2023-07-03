@@ -70,7 +70,6 @@ The last entry should not have a comma at the end. You also need to make sure th
 ```
 ❌ Invalid:
 ```diff
--[
 [
  {"inscriptionId": "<Other InscriptionId>"},
  {"inscriptionId": "<Other InscriptionId>"},

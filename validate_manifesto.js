@@ -1,3 +1,4 @@
+const fs = require('fs');
 const crypto = require('crypto');
 
 // Function to validate the manifesto
@@ -11,13 +12,24 @@ function validateManifesto(inscriptionId) {
     .then((text) => {
       const hash = crypto.createHash('sha256').update(text).digest('hex');
       const isValid = hash === manifestoHash;
+
       if (isValid) {
-        console.log("Manifesto Is Valid");
+        console.log('Manifesto is valid.');
+
+        // Check if the inscriptionId is already in collection.json
+        const collection = JSON.parse(fs.readFileSync('collection.json', 'utf8'));
+        const existingInscription = collection.find(item => item.inscriptionId === inscriptionId);
+
+        if (existingInscription) {
+          console.log(`InscriptionId ${inscriptionId} is already submitted. Please inscribe your own manifesto.`);
+        } else {
+          console.log(`InscriptionId ${inscriptionId} is not found in the collection.`);
+        }
       } else {
-        console.log("Not Valid");
+        console.log('Manifesto is not valid.');
       }
     })
-    .catch((err) => console.error('error:' + err));
+    .catch((err) => console.error('Error:', err));
 }
 
 // Get the inscriptionId from the console

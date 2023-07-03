@@ -127,7 +127,7 @@ Once your pull request is submitted, it will be reviewed by the repository maint
 
 ## Dealing with merge conflicts:
 
-If you get a merge conflict, you will need to resolve it before your pull request can be merged. You can do this manually on github by clicking the `Resolve conflicts` button. This will bring you to a page where you can edit the file. You will see something like this:
+If you get a merge conflict, you will need to resolve it before your pull request can be merged. You can do this manually on github by clicking the `Resolve conflicts` button. You might have to do this multiple times if branches go in before yours. This will bring you to a page where you can edit the file. You will see something like this:
 
 ```diff
 [

@@ -22,9 +22,7 @@ function validateManifesto(inscriptionId) {
 
         if (existingInscription) {
           console.log(`InscriptionId ${inscriptionId} is already submitted. Please inscribe your own manifesto.`);
-        } else {
-          console.log(`InscriptionId ${inscriptionId} is not found in the collection.`);
-        }
+        } 
       } else {
         console.log('Manifesto is not valid.');
       }

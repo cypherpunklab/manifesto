@@ -92,6 +92,14 @@ The last entry should not have a comma at the end. You also need to make sure th
 +{"inscriptionId": "<Your InscriptionId>"}
 ]
 ```
+✅ Valid:
+```diff
+[
+ {"inscriptionId": "<Other InscriptionId>"},
+ +{"inscriptionId": "<Your InscriptionId>"},
+ {"inscriptionId": "<Other InscriptionId>"}
+]
+```
 
 ## Stage your changes:
 

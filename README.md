@@ -5,7 +5,7 @@
 
 ## Run your own Bitcoin and Ord node
 We recommend running your own [bitcoin node](https://bitcoincore.org/en/download/), along with running [ord](https://github.com/ordinals/ord#installation) to inscribe from your own node.
-If you need help setting up your node don't hesitate to reach out on the Cypherpunk Ghosts [discord](https://discord.gg/MEz8yphw) and also the official ordianals [discord](https://discord.com/invite/ordinals).
+If you need help setting up your node don't hesitate to reach out on the Cypherpunk Ghosts [discord](https://discord.gg/kayEReCgVG) and also the official ordianals [discord](https://discord.com/invite/ordinals).
 You should get at least a `1tb ssd` to run your Bitcoin node because the blockchain with the ord index is about 600gb.
 
 *<ins>Again you should run your own node</ins>*

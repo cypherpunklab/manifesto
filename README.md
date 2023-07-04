@@ -1,16 +1,16 @@
 # A Cypherpunk's Manifesto
 
 ## Inscribe
-**Inscirbe your manifesto by downloading the `manifesto.html` file [HERE](https://github.com/cypherpunklab/manifesto/blob/main/manifesto.html) and inscribing it.** 
+**Inscribe your manifesto by downloading the `manifesto.html` file [HERE](https://github.com/cypherpunklab/manifesto/blob/main/manifesto.html) and inscribing it.** 
 
 ## Run your own Bitcoin and Ord node
-We recommend running your own [bitcoin node](https://bitcoincore.org/en/download/), Along with running [ord](https://github.com/ordinals/ord#installation) to inscribe from your own node.
-If you need help setting up your node don't hesitate to reach out on our discord as well as getting help from the official ordianals [discord](https://discord.com/invite/ordinals).
+We recommend running your own [bitcoin node](https://bitcoincore.org/en/download/), along with running [ord](https://github.com/ordinals/ord#installation) to inscribe from your own node.
+If you need help setting up your node don't hesitate to reach out on the Cypherpunk Ghosts [discord](https://discord.gg/kayEReCgVG) and also the official ordianals [discord](https://discord.com/invite/ordinals).
 You should get at least a `1tb ssd` to run your Bitcoin node because the blockchain with the ord index is about 600gb.
 
 *<ins>Again you should run your own node</ins>*
 
-However if you want to inscribe while you are getting your node setup or the hardware is too expensive you can use a inscribing service like
+However if you want to inscribe while you are getting your node setup or the hardware is too expensive you can use an inscribing service like
 https://looksordinal.com/ to inscribe your manifesto `html` file.
 
 *Your goal should be inscribing from your own node.*
@@ -48,6 +48,59 @@ add your `inscriptionId` to the `collection.json` file. Put it at the top.
 ```
 Save and close the file when you're done.
 
+Make sure that you don't change the structure of the `json` file. It should look like this:
+```json
+[
+  {"inscriptionId": "<InscriptionId-1>"},
+  {"inscriptionId": "<InscriptionId-2>"},
+  {"inscriptionId": "<InscriptionId-3>"}
+]
+```
+## Make your changes valid for a pull request:
+
+The last entry should not have a comma at the end. You also need to make sure the `[` and `]` are at the beginning and end of the file respectively each on their own line. If you don't do this, the file will be invalid and your pull request will need to be updated.
+
+❌ Invalid:
+```diff
+-[
++[{"inscriptionId": "<Your InscriptionId>"},
+ {"inscriptionId": "<Other InscriptionId>"},
+ {"inscriptionId": "<Other InscriptionId>"}
+]
+```
+❌ Invalid:
+```diff
+[
+ {"inscriptionId": "<Other InscriptionId>"},
+ {"inscriptionId": "<Other InscriptionId>"},
++]{"inscriptionId": "<Your InscriptionId>"}
+-]
+```
+✅ Valid:
+```diff
+[
++{"inscriptionId": "<Your InscriptionId>"},
+ {"inscriptionId": "<Other InscriptionId>"},
+ {"inscriptionId": "<Other InscriptionId>"}
+]
+```
+✅ Valid:
+```diff
+[
+ {"inscriptionId": "<Other InscriptionId>"},
+ {"inscriptionId": "<Other InscriptionId>"},
++{"inscriptionId": "<Your InscriptionId>"}
+]
+```
+✅ Valid:
+```diff
+[
+ {"inscriptionId": "<Other InscriptionId>"},
++{"inscriptionId": "<Your InscriptionId>"},
+ {"inscriptionId": "<Other InscriptionId>"}
+]
+```
+
 ## Stage your changes:
 
 After making your changes, you need to stage them for commit. You can do this using the `git add` command:
@@ -78,5 +131,37 @@ It will say that you you need to set the upstream branch. Copy the command it gi
     
 You can create a pull request by clicking the link that appears after pushing your branch to your GitHub. This will bring you to the pull request page where you can add a title and description for your pull request. After that, click the `Create pull request` button to submit your pull request.
 Once your pull request is submitted, it will be reviewed by the repository maintainers. If any changes are needed, they will let you know in the pull request conversation. Otherwise, it will be merged into the main branch of the original repository.
+
+## Dealing with merge conflicts:
+
+If you get a merge conflict, you will need to resolve it before your pull request can be merged. You can do this manually on github by clicking the `Resolve conflicts` button. You might have to do this multiple times if branches go in before yours. This will bring you to a page where you can edit the file. You will see something like this:
+
+```diff
+[
+ {"inscriptionId": "<Other InscriptionId-1>"},
+ {"inscriptionId": "<Other InscriptionId-2>"},
+<<<<<<< your-branch-name
+ {"inscriptionId": "<Your InscriptionId>"},
+=======
+ {"inscriptionId": "<Other InscriptionId-3>"},
+ {"inscriptionId": "<Other InscriptionId-4>"},
+ {"inscriptionId": "<Other InscriptionId-5>"}
+]
+>>>>>>> main   
+```
+You will need to remove the `<<<<<<< your-branch-name`, `=======` and `>>>>>>> main` lines.
+
+When your finished It should look somthing like this.
+```diff
+[
+ {"inscriptionId": "<Other InscriptionId-1>"},
+ {"inscriptionId": "<Other InscriptionId-2>"},
+ {"inscriptionId": "<Your InscriptionId>"},
+ {"inscriptionId": "<Other InscriptionId-3>"},
+ {"inscriptionId": "<Other InscriptionId-4>"},
+ {"inscriptionId": "<Other InscriptionId-5>"}
+]
+```
+Once you are done, click the `Mark as resolved` button. 
 
 > Cypherpunks Write Code

@@ -11,7 +11,7 @@ You should have at least a `1tb ssd` to run your Bitcoin node as the blockchain 
 Here is a good 2 part video on how to setup your node:
 https://youtu.be/zXlvkOSVM9M
 
-How to inscribe from you node: 
+How to inscribe from your node: 
 https://youtu.be/LXrUu8WOrHo
 
 *<ins>Again you should run your own node</ins>*

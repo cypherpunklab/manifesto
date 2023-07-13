@@ -1,7 +1,7 @@
 # A Cypherpunk's Manifesto
 
 ## Inscribe
-**Inscribe the manifesto by downloading the `manifesto.html` file [HERE](https://github.com/cypherpunklab/manifesto/blob/main/manifesto.html) and inscribing it.** 
+**Inscribe your manifesto by downloading the `manifesto.html` file [HERE](https://github.com/cypherpunklab/manifesto/blob/main/manifesto.html) and inscribing it.** 
 
 ## Run your own Bitcoin and Ord node
 We recommend running your own [bitcoin node](https://bitcoincore.org/en/download/), along with running [ord](https://github.com/ordinals/ord#installation) to inscribe using your own node.
@@ -16,7 +16,7 @@ https://youtu.be/LXrUu8WOrHo
 
 *<ins>Again you should run your own node</ins>*
 
-However if you want to inscribe while you are getting your node setup or the hardware is too expensive you can use an inscribing service like
+However if you want to inscribe while you are setting your node up or the hardware is too expensive you can use an inscribing service like
 https://looksordinal.com/ to inscribe your manifesto `html` file.
 
 *Your goal should be inscribing from your own node.*

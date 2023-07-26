@@ -66,6 +66,17 @@ Make sure that you don't change the structure of the `json` file. It should look
 
 The last entry should not have a comma at the end. You also need to make sure the `[` and `]` are at the beginning and end of the file respectively each on their own line. If you don't do this, the file will be invalid and your pull request will need to be updated.
 
+#### Add your entry in the middle it seems to help with merge conflicts
+Like this in the middle:
+✅ Valid:
+```diff
+[
+ {"inscriptionId": "<Other InscriptionId>"},
++{"inscriptionId": "<Your InscriptionId>"},
+ {"inscriptionId": "<Other InscriptionId>"}
+]
+```
+
 ❌ Invalid:
 ```diff
 -[
@@ -96,14 +107,6 @@ The last entry should not have a comma at the end. You also need to make sure th
  {"inscriptionId": "<Other InscriptionId>"},
  {"inscriptionId": "<Other InscriptionId>"},
 +{"inscriptionId": "<Your InscriptionId>"}
-]
-```
-✅ Valid:
-```diff
-[
- {"inscriptionId": "<Other InscriptionId>"},
-+{"inscriptionId": "<Your InscriptionId>"},
- {"inscriptionId": "<Other InscriptionId>"}
 ]
 ```
 

@@ -17,7 +17,7 @@ https://youtu.be/LXrUu8WOrHo
 *<ins>Again you should run your own node</ins>*
 
 However if you want to inscribe while you are setting your node up or the hardware is too expensive you can use an inscribing service like
-https://looksordinal.com/ to inscribe your manifesto `html` file.
+https://looksordinal.com/ to inscribe your manifesto `html` file. A good browser/mobile wallet to use for inscriptions is https://www.xverse.app/
 
 *Your goal should be inscribing from your own node.*
 
